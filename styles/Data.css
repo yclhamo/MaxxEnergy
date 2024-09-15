@@ -1,0 +1,49 @@
+.data-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.data-page h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #f1f1f1;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.back-to-top {
+  position: fixed;             /* Fix the button to the viewport */
+  bottom: 20px;                /* Distance from the bottom of the viewport */
+  right: 20px;                 /* Distance from the right of the viewport */
+  width: 50px;                 /* Width of the button */
+  height: 50px;                /* Height of the button */
+  background-color: #e9e4e4;   /* Background color of the button */
+  color: #333;                 /* Color of the arrow */
+  border: none;                /* Remove default border */
+  border-radius: 50%;          /* Make the button circular */
+  display: flex;               /* Use flexbox for centering */
+  align-items: center;         /* Vertically center the arrow */
+  justify-content: center;     /* Horizontally center the arrow */
+  font-size: 24px;             /* Font size for the arrow */
+  cursor: pointer;             /* Change cursor to pointer on hover */
+  opacity: 0;                  /* Initially hidden */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  z-index: 1000;               /* Ensure it is above other content */
+}
+
+.back-to-top.visible {
+  opacity: 1;                  
+  transform: scale(1.1);       
+}
+
+.back-to-top:hover {
+  background-color: #ddb00e;   
+}
